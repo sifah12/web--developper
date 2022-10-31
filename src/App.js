@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Amazon from "./component/amazon";
+import Navbar from "./component/navbar";
+const  App= () =>{
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+return(<React.Fragment>
+
+  <Navbar/>
+  <Amazon/>
+</React.Fragment>
+
+/* <div>check</div> */
+
+);
+
 }
 
 export default App;
